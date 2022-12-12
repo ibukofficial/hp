@@ -5,7 +5,7 @@
    display: flex;
 }
 
-.menu1 {
+.menu {
    position: relative;
    width: 125px;
    min-height: 50px;
@@ -21,13 +21,29 @@
    align-items: center;
    justify-content: center;
    margin: 0;
+   color: white;
+}
+
+.menuname:hover {
+   background: rgb(255, 150, 150);
+   color: black;
+}
+
+.menu:hover .nemusub {
+   display: block;
+}
+
+.menu:hover .nemusub2 {
+   display: block;
 }
 
 .menusub {
+   display: none;
    position: absolute;
 }
 
 .menusub2 {
+   display: none;
    position: absolute;
    top: 0px;
    left: 100%;
