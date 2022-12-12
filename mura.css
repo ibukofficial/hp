@@ -1,6 +1,11 @@
+* {
+   --topmenusize: 49px;
+   --topmenubordersize: 0.5px;
+}
+
 .topmenu {
    width: 100%;
-   height: 50px;
+   height: calc(var(--topmenusize) + var(--topmenubordersize));
    background: rgb(200, 0, 0);
    display: flex;
 }
@@ -8,20 +13,19 @@
 .menu {
    position: relative;
    width: 125px;
-   min-height: 50px;
-   max-height: 50px;
+   height: var(--topmenusize);
 }
 
 .menuname {
    width: 125px;
-   min-height: 50px;
-   max-height: 50px;
+   height: var(--topmenusize);
    background: rgb(200, 0, 0);
    display: flex;
    align-items: center;
    justify-content: center;
    margin: 0;
    color: white;
+   border: var(--topmenubordersize) solid white;
 }
 
 .menuname:hover {
@@ -29,22 +33,16 @@
    color: black;
 }
 
-.menu:hover .nemusub {
-   display: block;
-}
-
-.menu:hover .nemusub2 {
-   display: block;
-}
-
 .menusub {
    display: none;
    position: absolute;
 }
 
-.menusub2 {
-   display: none;
-   position: absolute;
+div.topmenu div.menu:hover > .menusub {
+   display: block;
+}
+
+.sub2 {
    top: 0px;
    left: 100%;
 }
