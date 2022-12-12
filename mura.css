@@ -7,7 +7,6 @@
 
 .menu1 {
    position: relative;
-   background: rgb(200, 0, 0);
    width: 125px;
    min-height: 50px;
    max-height: 50px;
@@ -17,6 +16,7 @@
    width: 125px;
    min-height: 50px;
    max-height: 50px;
+   background: rgb(200, 0, 0);
    display: flex;
    align-items: center;
    justify-content: center;
