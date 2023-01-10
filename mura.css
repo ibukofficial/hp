@@ -46,3 +46,7 @@ div.topmenu div.menu:hover > .menusub {
    top: 0px;
    left: 100%;
 }
+.link {
+   background-color: red(255, 150, 150);
+   color: white;
+}
