@@ -1,19 +1,11 @@
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-$(window).on('load scroll', function (){
-
-    var box = $('.fadeIn');
-    var animated = 'animated';
-    
-    box.each(function(){
-    
-      var boxOffset = $(this).offset().top;
-      var scrollPos = $(window).scrollTop();
-      var wh = $(window).height();
-  
-      //画面内のどの位置で処理を実行するかで「100」の値を変更
-      if(scrollPos > boxOffset - wh + 100 ){
-        $(this).addClass(animated);
-      }
-    });
-  
-  });
+addEventListener("load", () => {
+    /**
+     * 基本は読み込みが終了すれば、
+     * loading画面は必要ないと言っても過言ではないため、
+     * loadがトリガーされたら即座に表示を消す
+     * 
+     * もしも時間差が必要な場合は、setTimeout({}, 2000);を追加するといい
+     */
+    const spined = document.getElementsByClassName("spined")[0]
+    spined.classList.remove("spined")
+})
