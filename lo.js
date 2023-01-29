@@ -1,4 +1,5 @@
-window.onload = function(){
-    sleep(2000);
-window.location.href = 'https://muranakahp.netlify.app/ito.html';
-    }
+window.onload = function () {
+    setTimeout(() => {
+        window.location.href = 'https://muranakahp.netlify.app/ito.html';
+    }, 2000);
+}
